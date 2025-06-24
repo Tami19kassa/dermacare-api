@@ -1,6 +1,6 @@
-Flask
-Flask-Cors
-Pillow
-numpy
-tflite-runtime
-gunicorn
+Flask==3.0.3
+Flask-Cors==4.0.1
+Pillow==10.3.0
+numpy==1.26.4
+tensorflow==2.16.1
+gunicorn==22.0.0

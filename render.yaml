@@ -1,0 +1,11 @@
+# This file tells Render how to build and run your service.
+services:
+  - type: web
+    name: dermacare-api
+    # This is the most important part: Use Python 3.11
+    env: python
+    pythonVersion: "3.11"
+    # This tells Render how to install your dependencies
+    buildCommand: "pip install -r requirements.txt"
+    # This tells Render how to start your server
+    startCommand: "gunicorn app:app"
