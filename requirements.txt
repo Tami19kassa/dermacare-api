@@ -1,6 +1,12 @@
 Flask==3.0.3
 Flask-Cors==4.0.1
-Pillow==10.3.0
-numpy==1.26.4
-tensorflow==2.16.1
 gunicorn==22.0.0
+
+# Use a pre-compiled wheel for Pillow on a standard Linux environment
+Pillow @ https://files.pythonhosted.org/packages/b9/a2/7a612544a0e4443859063717282798150495337651b1a54728045610e303/pillow-10.3.0-cp311-cp311-manylinux_2_28_x86_64.whl
+
+# Use a pre-compiled wheel for NumPy
+numpy @ https://files.pythonhosted.org/packages/20/95/95b2acece565257e3c98f5835c24905325821c324a1b02b557a2abe7645d/numpy-1.26.4-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+
+# Use the full tensorflow package, which is robust
+tensorflow==2.15.0
